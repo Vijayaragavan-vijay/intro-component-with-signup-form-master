@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [solution](https://astonishing-biscuit-4fbc3f.netlify.app/)
-- Solution URL: [live site](https://www.frontendmentor.io/solutions/introcomponentwithsignupformmaster-FFCmvEwEgM)
+- Live Site URL: [live site](https://astonishing-biscuit-4fbc3f.netlify.app/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/introcomponentwithsignupformmaster-FFCmvEwEgM)
 
 ## My process
 
