@@ -22,3 +22,64 @@ Users should be able to:
 ### Mobile
 
 ![mobile](https://user-images.githubusercontent.com/95960286/205491691-b20181cd-aa98-49cb-9d13-a311fc333715.png)
+
+### Links
+
+- Live Site URL: [solution](https://astonishing-biscuit-4fbc3f.netlify.app/)
+- Solution URL: [live site](https://www.frontendmentor.io/solutions/introcomponentwithsignupformmaster-FFCmvEwEgM)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+This is really a good challenge for practising JS Form validations.
+
+``` js
+if (fnameinput.value.trim() == '') {
+        seterror(fnameinput, 'First name cannot be empty');
+    } else if (fnameinput.value.trim().length < 5) {
+        seterror(fnameinput, 'Must contain 5 chars')
+    } else {
+        setsuccess(fnameinput);
+    }
+```
+
+``` js
+function seterror(element, msg) {
+
+    if (element.classList.contains('success')) {
+        element.classList.remove('success');
+    }
+    element.classList.add('error');
+    element.parentElement.firstElementChild.nextElementSibling.style.visibility = 'visible';
+    element.parentElement.lastElementChild.style.visibility = 'visible';
+
+    element.parentElement.lastElementChild.textContent = msg
+    console.log(element.parentElement.lastElementChild)
+    console.log(element.parentElement.firstElementChild.nextElementSibling)
+}
+
+```
+
+``` js
+function setsuccess(element) {
+    flag++;
+    if (element.classList.contains('error')) {
+        element.classList.remove('error');
+    }
+    element.classList.add('success');
+    element.parentElement.firstElementChild.nextElementSibling.style.visibility = 'hidden';
+    element.parentElement.lastElementChild.style.visibility = 'hidden';
+}
+
+```
+
+## Author
+- Frontend Mentor - [@Vijayaragavan](https://www.frontendmentor.io/profile/vijayaragavankts)
