@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    /* background-size: 1300px; */
+    background-size: cover;
+    background-color: var(--Red);
+    position: relative;
+}
+
+#left {
+    top: 220px;
+    position: absolute;
+    left: 130px;
+    /* display: flex; */
+    max-width: 700px;
+    /* flex-direction: column; */
+}
+
+#left>h1 {
+    position: absolute;
+    left: 0;
+    word-spacing: 5px;
+    width: 400px;
+    font-size: 32px;
+    color: white;
+}
+
+#left>p {
+    margin-top: 20px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    left: 0;
+}
+
+#right {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-top: 100px;
+    /*margin-bottom: 400px;*/
+}
+
+#bluebtn {
+    background-color: var(--Blue);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    width: 540px;
+    text-align: center;
+}
+
+#bluebtn>span {
+    color: var(--GrayishBlue);
+}
+
+#right>#container {
+    position: relative;
+    width: 540px;
+    height: 430px;
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 20px;
+}
+
+#fname,
+#lname,
+#email,
+#pass {
+    width: 400px;
+    margin: 10px 60px;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 6px;
+    /* outline: none; */
+    outline-color: hsl(245, 11%, 57%);
+    border: 1px solid var(--GrayishBlue);
+}
+
+#greenbtn {
+    width: 400px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--Green);
+    margin: 20px 60px;
+    padding: 10px 20px;
+}
+
+#end {
+    font-size: 10px;
+    text-align: center;
+    /* margin-left: -19px; */
+}
+
+#end>span {
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#firstname #iconfname,
+#iconlname,
+#iconemail,
+#iconpassword {
+    position: absolute;
+    top: 42px;
+    right: 100px;
+    color: red;
+    visibility: hidden;
+}
+
+#iconlname {
+    top: 120px;
+}
+
+#iconemail {
+    top: 197px;
+}
+
+#iconpassword {
+    top: 276px;
+}
+
+#right p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 100px;
+    visibility: hidden;
+    color: red;
+}
+
+.error {
+    border-color: red !important;
+}
+
+.success {
+    border-color: var(--GrayishBlue);
+}
+
+@media screen and (max-width:400px) {
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+        max-width: 420px;
+    }
+    #left {
+        top: 90px;
+        left: 0;
+        max-width: 420px;
+    }
+    #left>h1 {
+        text-align: center;
+        left: 0px;
+        width: 400px;
+    }
+    #left>p {
+        width: 310px;
+        text-align: center;
+        top: 90px;
+        left: 40px;
+        font-size: 16px;
+    }
+    #right {
+        left: 0;
+        top: 300px;
+        width: 400px;
+    }
+    #right>#container {
+        width: 300px;
+        margin-top: -10px;
+        margin-left: 50px;
+        padding-left: 28px;
+        height: 410px;
+        margin-bottom: 20px;
+    }
+    #bluebtn {
+        margin-top: -20px;
+        /* margin: auto; */
+        margin-left: 50px;
+        width: 300px;
+    }
+    #fname,
+    #lname,
+    #email,
+    #pass {
+        padding: 0;
+        width: 240px;
+        margin: auto;
+        margin-bottom: 12px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    #pass {
+        padding-bottom: 20px;
+    }
+    #greenbtn {
+        width: 240px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #right p {
+        padding-left: 10px;
+    }
+    #firstname #iconfname,
+    #iconlname,
+    #iconemail,
+    #iconpassword {
+        top: 32px;
+        right: 50px;
+    }
+    #iconlname {
+        top: 102px;
+    }
+    #iconemail {
+        top: 172px;
+    }
+    #iconpassword {
+        top: 242px;
+    }
+    #end {
+        margin-left: 10px;
+        width: 220px;
+    }
+}
